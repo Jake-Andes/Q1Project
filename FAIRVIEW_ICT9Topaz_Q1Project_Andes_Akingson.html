@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minutetech</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e60000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e60000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            margin: 15px;
+            text-align: center;
+            width: 220px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+            transition: transform 0.2s; 
+        }
+
+        .product:hover {
+            transform: scale(1.05); 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .buy-now {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s; 
+        }
+
+        .buy-now:hover {
+            background-color: #c70000;
+        }
+
+        .order-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .order-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .checkout, .finish-order {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .checkout:hover, .finish-order:hover {
+            background-color: #c70000;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .comment-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px; /
+            height: 100px; /
+            margin-top: 10px;
+        }
+
+        .submit-comment {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s; 
+        }
+
+        .submit-comment:hover {
+            background-color: #c70000;         
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e60000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Minutetech!</h1>
+        <p>Your portal to gaming nostalgia.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#latest">Latest Releases</a></li>
+            <li><a href="#consoles">Consoles</a></li>
+            <li><a href="#controllers">Controllers</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#Checkout">Checkout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="latest">
+            <h2>Latest Releases</h2>
+            <ul>
+                <li>The Legend of Zelda: Tears of the Kingdom</li>
+                <li>Zelda: Breath of the Wild</li>
+                <li>Super Mario 64</li>
+            </ul>
+        </section>
+        
+        <section id="consoles">
+            <h2>Nintendo Consoles</h2>
+            <div class="product-container">
+                <div class="product">
+                    <h3>Nintendo Switch</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRUODD3qSlOsTkjfheknoMn2hEnHffbXnFEQ&s" alt="Nintendo Switch" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Nintendo Lite</h3>
+                    <img src="https://www.pngitem.com/pimgs/m/651-6515941_nintendo-switch-lite-colors-hd-png-download.png" alt="Nintendo Lite" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Nintendo 64</h3>
+                    <img src="https://www.videogameschronicle.com/files/2019/04/c42f3aee-f601-4076-bba2-6c1d9fcc02fc-DART15_1D_GAME2.jpg" alt="Nintendo 64" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Super Nintendo</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg" alt="Super Nintendo" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="controllers">
+            <h2>Nintendo Controllers</h2>
+            <div class="product-container">
+                <div class="product">
+                    <h3>Pro Controller</h3>
+                    <img src="https://i5.walmartimages.com/seo/Nintendo-Switch-Pro-Controller_7a20f413-2f9e-46c9-9b5f-8cdb32d125cc_1.1f0a2f6313f2fb2cd3c42f4566f44506.jpeg" alt="Pro Controller" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Joy-Con</h3>
+                    <img src="https://ecommerce.datablitz.com.ph/cdn/shop/products/819GGIPrmGL._AC_d0377b7d-5d2b-4b9b-964c-03d64fb554a7.jpg?v=1676921814" alt="Joy-Con" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Controller 64</h3>
+                    <img src="https://m.media-amazon.com/images/I/71phBtmUt-L._AC_SL1500_.jpg" alt="Controller 64" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Super Nintendo Controller</h3>
+                    <img src="https://cdn11.bigcommerce.com/s-ez2sytmqce/images/stencil/1280x1280/products/34157/31910/Super_Nintendo_OEM_Controller_-_Very_Good_Condition_1__94278.1647537967.jpg?c=2" alt="Super Nintendo Controller" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="games">
+            <h2>Popular Games</h2>
+            <div class="product-container">
+                <div class="product">
+                    <h3>Zelda: Tears of the Kingdom</h3>
+                    <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9f/The_Legend_of_Zelda_TOTK_%28NA_cover_art%29.png/revision/latest/scale-to-width-down/225?cb=20230725060708" alt="Zelda: Tears of the Kingdom" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Zelda: Breath of the Wild</h3>
+                    <img src="https://m.media-amazon.com/images/I/81KGsbq8ekL._AC_UF1000,1000_QL80_.jpg" alt="Zelda: Breath of the Wild" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>Super Mario 64</h3>
+                    <img src="https://static.wikia.nocookie.net/international-entertainment-project/images/5/53/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA64_-_poster.jpg/revision/latest?cb=20240211213533" alt="Super Mario 64" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+                <div class="product">
+                    <h3>The Legend of Zelda: A Link to the Past</h3>
+                    <img src="https://target.scene7.com/is/image/Target/GUEST_87830800-fc9c-40b2-af15-6eaa8c1166d2" alt="The Legend of Zelda: A Link to the Past" />
+                    <a href="#" class="buy-now">Buy Now!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <input type="email" placeholder="Enter your email to order" required>
+            <div>
+                <button class="checkout">Checkout</button>
+                <button class="finish-order">Finish Order</button>
+            </div>
+        </section>
+
+        <section class="comment-form">
+            <h2>Your Comments</h2>
+            <p>Please leave your comments below to help us provide better service:</p>
+            <textarea placeholder="Your comments here..."></textarea>
+            <br>
+            <button class="submit-comment">Submit Comment</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Minutetech, we are passionate fans of Nintendo, dedicated to celebrating its rich history and exciting future! Join us as we explore the world of gaming, share the latest news, and connect with fellow enthusiasts.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minutetech</p>
+    </footer>
+</body>
+</html>

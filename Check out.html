@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Check Out</title>
+	<style>
+      body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e60000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e60000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            margin: 15px;
+            text-align: center;
+            width: 220px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+            transition: transform 0.2s; 
+        }
+
+        .product:hover {
+            transform: scale(1.05); 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .buy-now {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s; 
+        }
+
+        .buy-now:hover {
+            background-color: #c70000;
+        }
+
+        .order-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .order-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .checkout, .finish-order {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .checkout:hover, .finish-order:hover {
+            background-color: #c70000;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .comment-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px; /
+            height: 100px; /
+            margin-top: 10px;
+        }
+
+        .submit-comment {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s; 
+        }
+
+        .submit-comment:hover {
+            background-color: #c70000;         
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e60000;
+            color: white;
+        }
+	</style>
+</head>
+<body>
+
+	<header>
+        <h1>Welcome to Minutetech!</h1>
+        <p>Your portal to gaming nostalgia.</p>
+    </header>
+	<nav>
+        <ul>
+            <li><a href="#latest">Latest Releases</a></li>
+            <li><a href="#consoles">Consoles</a></li>
+            <li><a href="#controllers">Controllers</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#Checkout">Checkout</a></li>
+        </ul>
+    </nav>
+ 
+ <center>	<section class="order-form">
+            <h2>Finish your Order</h2>
+            <input type="email" placeholder="Enter your email to order" required>
+            <div>
+                <button class="checkout">Checkout</button>
+                <button class="finish-order">Finish Order</button>
+            </div>
+        </section>
+
+        <section class="comment-form">
+            <h2>Your Comments</h2>
+            <p>Please leave your comments below to help us provide better service🤑👍</p>
+            <textarea placeholder="Your comments here..."></textarea>
+            <br>
+            <button class="submit-comment">Submit Comment</button>
+        </section>
+    </center>
+
+    <section id="about">
+            <h2>About Us</h2>
+            <p>At Minutetech, we are passionate fans of Nintendo, dedicated to celebrating its rich history and exciting future! Join us as we explore the world of gaming, share the latest news, and connect with fellow enthusiasts.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minutetech</p>
+    </footer>
+    <center>
+    <p class="submitted">Submitted by Akingson Jake G Andes</p>
+  <a href="https://docs.google.com/document/d/1Tw3lIGgWXFgfaSH8yz-kZPEEaJHY6l35bRQ4oXiwtmA/edit"> <button>Ref</button> </a>
+</center>
+</body>
+</html>
